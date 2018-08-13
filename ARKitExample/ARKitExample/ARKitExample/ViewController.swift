@@ -24,10 +24,45 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        
+//        let scene = SCNScene(named: "art.scnassets/ant/formica rufa.fbx")!
+        
+//        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+//        documentsDirectoryURL = [documentsDirectoryURL URLByAppendingPathComponent:@"product-1-optimized.scnassets/cube.dae"];
+//
+//        SCNSceneSource *sceneSource = [SCNSceneSource sceneSourceWithURL:documentsDirectoryURL options:nil]
+        
+        
+//        let desktopURL = NSURL(fileURLWithPath: "/Users/jappleseed/Desktop/")
+//        do {
+//            let temporaryDirectoryURL = try NSFileManager.defaultManager().URLForDirectory(.ItemReplacementDirectory, inDomain: .UserDomainMask, appropriateForURL: desktopURL, create: true)
+//        } catch {
+//            // handle the error
+//        }
+        
+        //load our file
+        let antScene = SCNScene(named: "art.scnassets/ant/formica_rufa.fbx")!
+        
+        //create noda
+        let node = SCNNode()
+        
+        // Add all the child nodes to the parent node
+        for child in antScene.rootNode.childNodes {
+            node.addChildNode(child)
+        }
+        
+        
+        // Add the node to the scene
+        sceneView.scene.rootNode.addChildNode(node)
+        
+        
+        
+        
+        
         
         // Set the scene to the view
-        sceneView.scene = scene
+//        sceneView.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {

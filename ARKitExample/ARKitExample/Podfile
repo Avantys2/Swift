@@ -6,15 +6,19 @@ target 'ARKitExample' do
   use_frameworks!
 
   # Pods for ARKitExample
+  pod 'Alamofire'
+  # AWSCore
+  pod 'AWSS3'
+  # pod 'AssimpKit', :git => 'https://github.com/dmsurti/AssimpKit.git'
 
-  target 'ARKitExampleTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ARKitExampleUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  # target 'ARKitExampleTests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
+  #
+  # target 'ARKitExampleUITests' do
+  #   inherit! :search_paths
+  #   # Pods for testing
+  # end
 
 end
