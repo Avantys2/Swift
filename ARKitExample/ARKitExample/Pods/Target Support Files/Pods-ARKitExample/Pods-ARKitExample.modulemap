@@ -1,6 +1,0 @@
-framework module Pods_ARKitExample {
-  umbrella header "Pods-ARKitExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
