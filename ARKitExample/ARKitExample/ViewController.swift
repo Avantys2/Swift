@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ARKitExample
 //
-//  Created by Viktor Siedov on 09.08.2018.
+//  Created by Viktor Siedov on 15.08.2018.
 //  Copyright © 2018 Viktor Siedov. All rights reserved.
 //
 
@@ -23,46 +23,36 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        
         // Create a new scene
 //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
-//        let scene = SCNScene(named: "art.scnassets/ant/formica rufa.fbx")!
+        //"art.scnassets/ant/formica_rufa.fbx"
         
-//        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-//        documentsDirectoryURL = [documentsDirectoryURL URLByAppendingPathComponent:@"product-1-optimized.scnassets/cube.dae"];
+//            + (SCNAssimpScene *)assimpSceneNamed:(NSString *)name
+//        postProcessFlags:
+//        (AssimpKitPostProcessSteps)postProcessFlags;
+        
+//        let assimp = SCNAssimpScene.assimpScene(with:URL(fileURLWithPath: "art.scnassets/ant/formica_rufa.fbx"), postProcessFlags:[.process_FlipUVs,.process_Triangulate])!
+        
+        
+        let assimp = SCNAssimpScene.assimpSceneNamed("art.scnassets/spider/Spider.fbx", postProcessFlags: [.process_FlipUVs,.process_Triangulate])!
+        
+//            AssimpKit_Process_FlipUVs |
+//            AssimpKit_Process_Triangulate)
+        
+        
+        
+        // retrieve the SCNView
+//        SCNView *scnView = (SCNView *)self.view;
 //
-//        SCNSceneSource *sceneSource = [SCNSceneSource sceneSourceWithURL:documentsDirectoryURL options:nil]
+//        // set the model scene to the view
+//        scnView.scene = scene.modelScene;
         
-        
-//        let desktopURL = NSURL(fileURLWithPath: "/Users/jappleseed/Desktop/")
-//        do {
-//            let temporaryDirectoryURL = try NSFileManager.defaultManager().URLForDirectory(.ItemReplacementDirectory, inDomain: .UserDomainMask, appropriateForURL: desktopURL, create: true)
-//        } catch {
-//            // handle the error
-//        }
-        
-        //load our file
-        let antScene = SCNScene(named: "art.scnassets/ant/formica_rufa.fbx")!
-        
-        //create noda
-        let node = SCNNode()
-        
-        // Add all the child nodes to the parent node
-        for child in antScene.rootNode.childNodes {
-            node.addChildNode(child)
-        }
-        
-        
-        // Add the node to the scene
-        sceneView.scene.rootNode.addChildNode(node)
-        
-        
-        
-        
-        
+        let scnView:SCNView = view as! SCNView
         
         // Set the scene to the view
-//        sceneView.scene = scene
+        scnView.scene = assimp.modelScene;
     }
     
     override func viewWillAppear(_ animated: Bool) {
