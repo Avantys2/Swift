@@ -7,6 +7,7 @@ target 'WebTextTransfer' do
 
   # Pods for WebTextTransfer
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
   pod 'MessageKit'
   pod 'RealmSwift'
 
