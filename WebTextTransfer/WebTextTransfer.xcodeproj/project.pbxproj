@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47629940DD0409C314C7D5CF /* Pods_WebTextTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA04E02AB67CF39C2083E3E /* Pods_WebTextTransfer.framework */; };
 		77B14333213C51C8007CCCC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B14332213C51C8007CCCC6 /* AppDelegate.swift */; };
 		77B14338213C51C8007CCCC6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B14336213C51C8007CCCC6 /* Login.storyboard */; };
 		77B1433A213C51CA007CCCC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B14339213C51CA007CCCC6 /* Assets.xcassets */; };
@@ -18,12 +19,11 @@
 		77F2AEBD213CED4C0003BCDB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEBC213CED4C0003BCDB /* StorageManager.swift */; };
 		77F2AEBF213D5EE20003BCDB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEBE213D5EE20003BCDB /* ChatVC.swift */; };
 		77F2AEC1213D5EFA0003BCDB /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEC0213D5EFA0003BCDB /* GroupsVC.swift */; };
-		8A90ABF422D6505AA1136EC1 /* Pods_WebTextTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5AC23ECCDF1C23B60E4B4 /* Pods_WebTextTransfer.framework */; };
+		77F2AEC3213DAEFB0003BCDB /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEC2213DAEFB0003BCDB /* Group.swift */; };
+		77F2AEC5213DB72F0003BCDB /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEC4213DB72F0003BCDB /* DatabaseRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27B5AC23ECCDF1C23B60E4B4 /* Pods_WebTextTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebTextTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5817425D0229A2A16AB28EA1 /* Pods-WebTextTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 		77B1432F213C51C8007CCCC6 /* WebTextTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTextTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B14332213C51C8007CCCC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77B14337213C51C8007CCCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -37,7 +37,11 @@
 		77F2AEBC213CED4C0003BCDB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		77F2AEBE213D5EE20003BCDB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		77F2AEC0213D5EFA0003BCDB /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
-		8C7A1EBEF6B28B65035C60B5 /* Pods-WebTextTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		77F2AEC2213DAEFB0003BCDB /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		77F2AEC4213DB72F0003BCDB /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
+		8825ED5733D5437B324A967B /* Pods-WebTextTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		90E90D21C95540742A4B3B68 /* Pods-WebTextTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		EAA04E02AB67CF39C2083E3E /* Pods_WebTextTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebTextTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,28 +49,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A90ABF422D6505AA1136EC1 /* Pods_WebTextTransfer.framework in Frameworks */,
+				47629940DD0409C314C7D5CF /* Pods_WebTextTransfer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21B7FC8C008EBE91593B907C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				27B5AC23ECCDF1C23B60E4B4 /* Pods_WebTextTransfer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		77B14326213C51C8007CCCC6 = {
 			isa = PBXGroup;
 			children = (
 				77B14331213C51C8007CCCC6 /* WebTextTransfer */,
 				77B14330213C51C8007CCCC6 /* Products */,
-				AA6C9D4D4BC821FA290FC291 /* Pods */,
-				21B7FC8C008EBE91593B907C /* Frameworks */,
+				C1C5C752AB895C8E3119FBA4 /* Pods */,
+				B7C40D01DE04C7944C696260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				77F2AEB8213CECD90003BCDB /* Message.swift */,
+				77F2AEC2213DAEFB0003BCDB /* Group.swift */,
+				77F2AEC4213DB72F0003BCDB /* DatabaseRepresentation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,11 +143,19 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		AA6C9D4D4BC821FA290FC291 /* Pods */ = {
+		B7C40D01DE04C7944C696260 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5817425D0229A2A16AB28EA1 /* Pods-WebTextTransfer.debug.xcconfig */,
-				8C7A1EBEF6B28B65035C60B5 /* Pods-WebTextTransfer.release.xcconfig */,
+				EAA04E02AB67CF39C2083E3E /* Pods_WebTextTransfer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1C5C752AB895C8E3119FBA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8825ED5733D5437B324A967B /* Pods-WebTextTransfer.debug.xcconfig */,
+				90E90D21C95540742A4B3B68 /* Pods-WebTextTransfer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -161,11 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77B14341213C51CA007CCCC6 /* Build configuration list for PBXNativeTarget "WebTextTransfer" */;
 			buildPhases = (
-				9216231FE6593E7CBA33D51F /* [CP] Check Pods Manifest.lock */,
+				615F84800D3DD4EA16AA29D3 /* [CP] Check Pods Manifest.lock */,
 				77B1432B213C51C8007CCCC6 /* Sources */,
 				77B1432C213C51C8007CCCC6 /* Frameworks */,
 				77B1432D213C51C8007CCCC6 /* Resources */,
-				2633B6F1D38D9AAD323B047D /* [CP] Embed Pods Frameworks */,
+				DB1D803DCAF0A06F40C8B70A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,37 +230,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2633B6F1D38D9AAD323B047D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9216231FE6593E7CBA33D51F /* [CP] Check Pods Manifest.lock */ = {
+		615F84800D3DD4EA16AA29D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +248,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB1D803DCAF0A06F40C8B70A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,8 +300,10 @@
 				77F2AEBB213CED190003BCDB /* NetworkManager.swift in Sources */,
 				77F2AEBF213D5EE20003BCDB /* ChatVC.swift in Sources */,
 				77F2AEC1213D5EFA0003BCDB /* GroupsVC.swift in Sources */,
+				77F2AEC3213DAEFB0003BCDB /* Group.swift in Sources */,
 				77F2AEBD213CED4C0003BCDB /* StorageManager.swift in Sources */,
 				77F2AEB9213CECD90003BCDB /* Message.swift in Sources */,
+				77F2AEC5213DB72F0003BCDB /* DatabaseRepresentation.swift in Sources */,
 				77B14333213C51C8007CCCC6 /* AppDelegate.swift in Sources */,
 				77B1434F213C7B2E007CCCC6 /* LoginVC.swift in Sources */,
 			);
@@ -427,7 +447,7 @@
 		};
 		77B14342213C51CA007CCCC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5817425D0229A2A16AB28EA1 /* Pods-WebTextTransfer.debug.xcconfig */;
+			baseConfigurationReference = 8825ED5733D5437B324A967B /* Pods-WebTextTransfer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,7 +466,7 @@
 		};
 		77B14343213C51CA007CCCC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C7A1EBEF6B28B65035C60B5 /* Pods-WebTextTransfer.release.xcconfig */;
+			baseConfigurationReference = 90E90D21C95540742A4B3B68 /* Pods-WebTextTransfer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,4 +6,6 @@
 //  Copyright © 2018 Viktor Siedov. All rights reserved.
 //
 
+
+/// This place for local persistence
 import Foundation

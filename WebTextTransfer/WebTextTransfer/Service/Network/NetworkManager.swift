@@ -28,5 +28,9 @@ class NetworkManager{
             completeHandler!(authData, error)
         }
     }
+    
+    public func sendMessage(content:String) {
+        
+    }
 }
 
