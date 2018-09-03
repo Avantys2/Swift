@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		77B14333213C51C8007CCCC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B14332213C51C8007CCCC6 /* AppDelegate.swift */; };
-		77B14335213C51C8007CCCC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B14334213C51C8007CCCC6 /* ViewController.swift */; };
-		77B14338213C51C8007CCCC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B14336213C51C8007CCCC6 /* Main.storyboard */; };
+		77B14338213C51C8007CCCC6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B14336213C51C8007CCCC6 /* Login.storyboard */; };
 		77B1433A213C51CA007CCCC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B14339213C51CA007CCCC6 /* Assets.xcassets */; };
 		77B1433D213C51CA007CCCC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B1433B213C51CA007CCCC6 /* LaunchScreen.storyboard */; };
 		77B1434D213C77D0007CCCC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77B14345213C6F52007CCCC6 /* GoogleService-Info.plist */; };
 		77B1434F213C7B2E007CCCC6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1434E213C7B2E007CCCC6 /* LoginVC.swift */; };
+		77F2AEB9213CECD90003BCDB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEB8213CECD90003BCDB /* Message.swift */; };
+		77F2AEBB213CED190003BCDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEBA213CED190003BCDB /* NetworkManager.swift */; };
+		77F2AEBD213CED4C0003BCDB /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEBC213CED4C0003BCDB /* StorageManager.swift */; };
+		77F2AEBF213D5EE20003BCDB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEBE213D5EE20003BCDB /* ChatVC.swift */; };
+		77F2AEC1213D5EFA0003BCDB /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2AEC0213D5EFA0003BCDB /* GroupsVC.swift */; };
 		8A90ABF422D6505AA1136EC1 /* Pods_WebTextTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5AC23ECCDF1C23B60E4B4 /* Pods_WebTextTransfer.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +26,17 @@
 		5817425D0229A2A16AB28EA1 /* Pods-WebTextTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 		77B1432F213C51C8007CCCC6 /* WebTextTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebTextTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B14332213C51C8007CCCC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77B14334213C51C8007CCCC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77B14337213C51C8007CCCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77B14337213C51C8007CCCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		77B14339213C51CA007CCCC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77B1433C213C51CA007CCCC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77B1433E213C51CA007CCCC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77B14345213C6F52007CCCC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77B1434E213C7B2E007CCCC6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		77F2AEB8213CECD90003BCDB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		77F2AEBA213CED190003BCDB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		77F2AEBC213CED4C0003BCDB /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		77F2AEBE213D5EE20003BCDB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		77F2AEC0213D5EFA0003BCDB /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		8C7A1EBEF6B28B65035C60B5 /* Pods-WebTextTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebTextTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebTextTransfer/Pods-WebTextTransfer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +86,6 @@
 				77B14347213C7033007CCCC6 /* ViewController */,
 				77B14344213C6F11007CCCC6 /* Supporting Files */,
 				77B14332213C51C8007CCCC6 /* AppDelegate.swift */,
-				77B14336213C51C8007CCCC6 /* Main.storyboard */,
 			);
 			path = WebTextTransfer;
 			sourceTree = "<group>";
@@ -97,8 +104,10 @@
 		77B14347213C7033007CCCC6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				77B14334213C51C8007CCCC6 /* ViewController.swift */,
 				77B1434E213C7B2E007CCCC6 /* LoginVC.swift */,
+				77B14336213C51C8007CCCC6 /* Login.storyboard */,
+				77F2AEBE213D5EE20003BCDB /* ChatVC.swift */,
+				77F2AEC0213D5EFA0003BCDB /* GroupsVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -106,6 +115,7 @@
 		77B14348213C7043007CCCC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77F2AEB8213CECD90003BCDB /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +132,7 @@
 		77B1434A213C7089007CCCC6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				77F2AEBA213CED190003BCDB /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 		77B1434B213C709B007CCCC6 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				77F2AEBC213CED4C0003BCDB /* StorageManager.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -205,7 +217,7 @@
 				77B1433D213C51CA007CCCC6 /* LaunchScreen.storyboard in Resources */,
 				77B1433A213C51CA007CCCC6 /* Assets.xcassets in Resources */,
 				77B1434D213C77D0007CCCC6 /* GoogleService-Info.plist in Resources */,
-				77B14338213C51C8007CCCC6 /* Main.storyboard in Resources */,
+				77B14338213C51C8007CCCC6 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +236,7 @@
 				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -233,6 +246,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77B14335213C51C8007CCCC6 /* ViewController.swift in Sources */,
+				77F2AEBB213CED190003BCDB /* NetworkManager.swift in Sources */,
+				77F2AEBF213D5EE20003BCDB /* ChatVC.swift in Sources */,
+				77F2AEC1213D5EFA0003BCDB /* GroupsVC.swift in Sources */,
+				77F2AEBD213CED4C0003BCDB /* StorageManager.swift in Sources */,
+				77F2AEB9213CECD90003BCDB /* Message.swift in Sources */,
 				77B14333213C51C8007CCCC6 /* AppDelegate.swift in Sources */,
 				77B1434F213C7B2E007CCCC6 /* LoginVC.swift in Sources */,
 			);
@@ -274,12 +292,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		77B14336213C51C8007CCCC6 /* Main.storyboard */ = {
+		77B14336213C51C8007CCCC6 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				77B14337213C51C8007CCCC6 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		77B1433B213C51CA007CCCC6 /* LaunchScreen.storyboard */ = {

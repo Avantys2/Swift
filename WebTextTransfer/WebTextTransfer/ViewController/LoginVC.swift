@@ -12,22 +12,27 @@
  */
 
 import UIKit
-import FirebaseAuth
 
 class LoginVC: UIViewController {
-
     
-    // MARK: - Helpers
     
-    private func signIn() {
-//        guard let name = displayNameField.text, !name.isEmpty else {
-//            showMissingNameAlert()
-//            return
-//        }
-        
-//        displayNameField.resignFirstResponder()
-        
-//        AppSettings.displayName = name
-        Auth.auth().signInAnonymously(completion: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        actionSignIn()
+    }
+    
+    
+    // MARK: - Actions
+    func actionSignIn(){
+        NetworkManager.shared.signIn { (authData, error) in
+            if let user = authData?.user {
+                print(user.providerID)
+                /// go to new controller, better to do it in Router
+                self.view?.window?.rootViewController = ChatVC()
+            } else {
+                print("Error with registration : \(error?.localizedDescription ?? "No error")")
+                return
+            }
+        }
     }
 }

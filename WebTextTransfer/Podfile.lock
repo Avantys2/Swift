@@ -7,6 +7,12 @@ PODS:
     - FirebaseAnalytics (= 5.1.1)
   - Firebase/CoreOnly (5.7.0):
     - FirebaseCore (= 5.1.2)
+  - Firebase/Database (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
+  - Firebase/Storage (5.7.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.1)
   - FirebaseAnalytics (5.1.1):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.2)
@@ -24,9 +30,15 @@ PODS:
   - FirebaseAuthInterop (1.0.0)
   - FirebaseCore (5.1.2):
     - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.2.1):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseStorage (3.0.1):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (5.1.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
     - GoogleUtilities/MethodSwizzler (~> 5.2.0)
@@ -50,6 +62,7 @@ PODS:
   - GoogleUtilities/Reachability (5.2.2):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
+  - leveldb-library (1.20)
   - MessageKit (1.0.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -65,6 +78,8 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Storage
   - MessageKit
   - RealmSwift
 
@@ -75,10 +90,13 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - leveldb-library
     - MessageKit
     - nanopb
     - Realm
@@ -90,15 +108,18 @@ SPEC CHECKSUMS:
   FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 3a97432acb324b439fbed338e642f9cbb516a63d
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
+  FirebaseStorage: 43f823b96b72a08539eba21a7de043348a69d4c6
   GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
   RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
 
-PODFILE CHECKSUM: 7cd0bc381ed0ca28d58c397d9f18a18777516841
+PODFILE CHECKSUM: 6a32c67c29fcf6fac8c30a8a9c7845deef92833e
 
 COCOAPODS: 1.5.3
