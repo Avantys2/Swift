@@ -7,24 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77953DB5212AB61000610177 /* AssimpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DB4212AB61000610177 /* AssimpKit.framework */; };
+		77953DB6212AB61000610177 /* AssimpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DB4212AB61000610177 /* AssimpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77953DB9212AB68200610177 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DB8212AB68200610177 /* AWSS3.framework */; };
+		77953DBA212AB68200610177 /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DB8212AB68200610177 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77953DBC212AB6A900610177 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DBB212AB6A900610177 /* AWSCore.framework */; };
+		77953DBD212AB6A900610177 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77953DBB212AB6A900610177 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77953DC0212B695400610177 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77953DBF212B695400610177 /* Constans.swift */; };
+		77953DC4212B6C7B00610177 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77953DC3212B6C7B00610177 /* ServerManager.swift */; };
 		77999E3C21238908003948ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77999E3B21238908003948ED /* AppDelegate.swift */; };
 		77999E3E21238908003948ED /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 77999E3D21238908003948ED /* art.scnassets */; };
 		77999E4021238908003948ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77999E3F21238908003948ED /* ViewController.swift */; };
 		77999E4321238908003948ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77999E4121238908003948ED /* Main.storyboard */; };
 		77999E4521238909003948ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77999E4421238909003948ED /* Assets.xcassets */; };
 		77999E4821238909003948ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77999E4621238909003948ED /* LaunchScreen.storyboard */; };
-		77999E50212389FE003948ED /* AssimpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77999E4F212389FE003948ED /* AssimpKit.framework */; };
-		77999E51212389FE003948ED /* AssimpKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77999E4F212389FE003948ED /* AssimpKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		77999E52212389FF003948ED /* Embed Frameworks */ = {
+		77953DB7212AB61000610177 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				77999E51212389FE003948ED /* AssimpKit.framework in Embed Frameworks */,
+				77953DBA212AB68200610177 /* AWSS3.framework in Embed Frameworks */,
+				77953DB6212AB61000610177 /* AssimpKit.framework in Embed Frameworks */,
+				77953DBD212AB6A900610177 /* AWSCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +40,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		77953DB4212AB61000610177 /* AssimpKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssimpKit.framework; path = Carthage/Build/iOS/AssimpKit.framework; sourceTree = "<group>"; };
+		77953DB8212AB68200610177 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = Carthage/Build/iOS/AWSS3.framework; sourceTree = "<group>"; };
+		77953DBB212AB6A900610177 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Carthage/Build/iOS/AWSCore.framework; sourceTree = "<group>"; };
+		77953DBF212B695400610177 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		77953DC3212B6C7B00610177 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		77999E3821238908003948ED /* ARKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77999E3B21238908003948ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77999E3D21238908003948ED /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -40,7 +53,6 @@
 		77999E4421238909003948ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77999E4721238909003948ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77999E4921238909003948ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77999E4F212389FE003948ED /* AssimpKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssimpKit.framework; path = Carthage/Build/iOS/AssimpKit.framework; sourceTree = "<group>"; };
 		77999E5421238CD5003948ED /* ARKitExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKitExample-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77999E50212389FE003948ED /* AssimpKit.framework in Frameworks */,
+				77953DB9212AB68200610177 /* AWSS3.framework in Frameworks */,
+				77953DB5212AB61000610177 /* AssimpKit.framework in Frameworks */,
+				77953DBC212AB6A900610177 /* AWSCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77953DC1212B6C5000610177 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				77953DC2212B6C6200610177 /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		77953DC2212B6C6200610177 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				77953DC3212B6C7B00610177 /* ServerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		77999E2F21238908003948ED = {
 			isa = PBXGroup;
 			children = (
-				77999E4F212389FE003948ED /* AssimpKit.framework */,
+				77953DBB212AB6A900610177 /* AWSCore.framework */,
+				77953DB8212AB68200610177 /* AWSS3.framework */,
+				77953DB4212AB61000610177 /* AssimpKit.framework */,
 				77999E3A21238908003948ED /* ARKitExample */,
 				77999E3921238908003948ED /* Products */,
 			);
@@ -76,6 +108,7 @@
 		77999E3A21238908003948ED /* ARKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				77953DC1212B6C5000610177 /* Service */,
 				77999E3B21238908003948ED /* AppDelegate.swift */,
 				77999E3D21238908003948ED /* art.scnassets */,
 				77999E3F21238908003948ED /* ViewController.swift */,
@@ -84,6 +117,7 @@
 				77999E4621238909003948ED /* LaunchScreen.storyboard */,
 				77999E4921238909003948ED /* Info.plist */,
 				77999E5421238CD5003948ED /* ARKitExample-Bridging-Header.h */,
+				77953DBF212B695400610177 /* Constans.swift */,
 			);
 			path = ARKitExample;
 			sourceTree = "<group>";
@@ -98,7 +132,8 @@
 				77999E3421238908003948ED /* Sources */,
 				77999E3521238908003948ED /* Frameworks */,
 				77999E3621238908003948ED /* Resources */,
-				77999E52212389FF003948ED /* Embed Frameworks */,
+				77953DB7212AB61000610177 /* Embed Frameworks */,
+				77953DBE212AB6D600610177 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -156,13 +191,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77953DBE212AB6D600610177 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		77999E3421238908003948ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77953DC4212B6C7B00610177 /* ServerManager.swift in Sources */,
 				77999E4021238908003948ED /* ViewController.swift in Sources */,
 				77999E3C21238908003948ED /* AppDelegate.swift in Sources */,
+				77953DC0212B695400610177 /* Constans.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SV.ARKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viktor/work/Swift/ARKitExample/ARKitExample/ARKitExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ARKitExample/ARKitExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,7 +397,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SV.ARKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/viktor/work/Swift/ARKitExample/ARKitExample/ARKitExample-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ARKitExample/ARKitExample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

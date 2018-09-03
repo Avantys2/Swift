@@ -23,31 +23,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
-        
-        // Create a new scene
-//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
-        //"art.scnassets/ant/formica_rufa.fbx"
-        
-//            + (SCNAssimpScene *)assimpSceneNamed:(NSString *)name
-//        postProcessFlags:
-//        (AssimpKitPostProcessSteps)postProcessFlags;
-        
-//        let assimp = SCNAssimpScene.assimpScene(with:URL(fileURLWithPath: "art.scnassets/ant/formica_rufa.fbx"), postProcessFlags:[.process_FlipUVs,.process_Triangulate])!
-        
-        
-        let assimp = SCNAssimpScene.assimpSceneNamed("art.scnassets/spider/Spider.fbx", postProcessFlags: [.process_FlipUVs,.process_Triangulate])!
-        
-//            AssimpKit_Process_FlipUVs |
-//            AssimpKit_Process_Triangulate)
-        
-        
-        
-        // retrieve the SCNView
-//        SCNView *scnView = (SCNView *)self.view;
-//
-//        // set the model scene to the view
-//        scnView.scene = scene.modelScene;
+        let assimp = SCNAssimpScene.assimpSceneNamed("art.scnassets/Jackolantern/jackolantern.FBX", postProcessFlags: [])!
         
         let scnView:SCNView = view as! SCNView
         

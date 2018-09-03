@@ -1,1 +1,2 @@
+github "aws/aws-sdk-ios" "2.6.27"
 github "dmsurti/AssimpKit" "v1.2.0"
