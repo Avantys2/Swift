@@ -19,7 +19,7 @@ class FilesStore {
     
     private var objects = [String]()
     
-    public var maxStoreCount: Int
+    //public var maxStoreCount: Int
     public var valueArray: [String] {
         return objects
     }
@@ -28,11 +28,11 @@ class FilesStore {
         return objects.count
     }
     
-    init (maxCount: Int = 100) {
+    init () {
         
         writeQueue.maxConcurrentOperationCount = 1
         removeQueue.maxConcurrentOperationCount = 1
-        maxStoreCount = maxCount
+        //maxStoreCount = maxCount
         
         writeQueue.qualityOfService = .background
         removeQueue.qualityOfService = .background
